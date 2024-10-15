@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+.banner {
+    position: fixed;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between; /* Garante que o conteúdo ocupe os extremos */
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 20px;
+    width: 100%; /* O banner ocupa a largura total da tela */
+}
+.box img {
+    width: 300px; /* Define uma largura fixa para as imagens */
+    height: 200px; /* Define uma altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
+}
+.banner-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    flex: 0 1 auto; /* Deixe o texto do título crescer naturalmente */
+}
+.banner-txt span{
+    color: rgb(127, 182, 255);
+}
+
+.banner-link {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px; /* Adiciona espaço entre os links */
+    flex: 0 1 auto; /* Permite que os links ocupem apenas o espaço necessário */
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+}
+
+.banner-link a {
+    text-decoration: none;
+    color: black;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+}
+.img-fundo{
+    width: 100%;
+    height: 250px;
+    background-image: url(assets/img-fundo.jpg);
+}
+.quarto{
+    display: block;
+    text-align: center;
+    margin: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.quarto h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: rgb(107, 104, 104);
+}
+.quarto p{
+    font-size: 16px;
+}
+.container{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    margin: 0 auto;
+}
+.box{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+    flex-grow: 1;
+    justify-content: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.info-quarto {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: grey;
+    font-weight: bold;
+}
+
+.info-container {
+    display: flex;
+    display: row;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    align-items: center;
+}
+
+.info-item {
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.info-item2{
+    font-size: 14px;
+    padding: 10px 20px;
+    align-items: center;   
+    display: flex;
+    flex-grow: 0;
+    margin-bottom: 50px;
+}
+.circle{
+    width: 5px; /* Largura do círculo */
+    height: 5px; /* Altura do círculo */
+    background-color: #000000; /* Cor de fundo do círculo */
+    border-radius: 50%; /* Faz o elemento se tornar um círculo */
+    display: flex;
+    margin-right: 4px;
+}
+img{
+    width: 350px;
+}
+.contato{
+    background-color: rgb(50, 148, 102);
+    color: white;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+.entre{
+    margin: 0 auto;
+    font-size: 20px;
+    max-width: 200px;
+    
+}
+.endereco{
+    font-size: 17px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    gap: 20px;
+}
+.tel{
+    font-size: 17px;
+    margin: 0 auto;
+    display: flex;
+    max-width: 300px;
+    gap: 20px;
+    align-items: center;
+    flex-grow: 1;
+}
+.data{
+    font-size: 17px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    gap: 20px;
+}
+.endereco img, .data img,.tel img{
+    width: 30px;
+}
+.rodape{
+    background-color: rgb(50, 148, 102);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 25px;
+}
+@media (max-width: 400px){
+    .info-container {
+        display: flex;
+    }
+     a {
+        font-size: 10px;
+    }
+    .info-item{
+        display: none;
+    }
+    .info-item2{
+        display: none;
+    }
+    .info-quarto h2{
+        display: none;
+    }
+    .banner-txt h1{
+        font-size: 15px;
+    }
+    .img-fundo{
+        background-position: center;
+        background-size: cover;
+    }
+}

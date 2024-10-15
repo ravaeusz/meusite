@@ -1,0 +1,236 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+.banner {
+    position: fixed;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between; /* Garante que o conteúdo ocupe os extremos */
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 20px;
+    gap: 10px;
+    width: 100%; /* O banner ocupa a largura total da tela */
+}
+
+.banner-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+}
+.banner-txt span{
+    color: rgb(127, 182, 255);
+}
+
+.banner-link {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px; /* Adiciona espaço entre os links */
+    flex: 0 1 auto; /* Permite que os links ocupem apenas o espaço necessário */
+    flex: 0 1 auto;
+}
+
+.banner-link a {
+    text-decoration: none;
+    color: black;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+}
+.fundo-img{
+    width: 100%;
+    height: 600px;
+    background: url(assets/img-fundo.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex: 0 1 auto;
+}
+.titulo{
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 30px;
+    margin: auto;
+    gap: 20px;
+    background-color: rgba(105, 215, 219, 0.61);
+    padding: 40px;
+    border: 1px solid white;
+    display: flex;
+    flex: 0 1 auto;
+    color: white;
+    font-weight: bold;
+}
+.titulo h1{
+    font-size: 70px;
+}
+.bem-vindo, .rota, .sobre{
+    text-align: center;
+    margin: 100px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.bem-vindo h1, .rota h1, .sobre h1{
+    font-size: 25px;
+    margin-bottom: 30px;
+    min-width: 100px;
+}
+.bem-vindo p, .rota p, .sobre p{
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+.containerr{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+.card{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+}
+.card1, .card2, .card3{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid green;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.containerr a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    width: 400px;}
+
+iframe{
+    width: 100%;
+    height: 500px;
+}
+.sobre h1{
+    size: 70px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex: 1 1 calc(50% - 20px); /* Cada box ocupa 50% da largura */
+}
+.box img {
+    max-width: 150px;
+    max-height: 100px;
+    border-radius: 10px;
+    margin-right: 50px; /* Espaço entre a imagem e o texto */
+}
+.box-content {
+    flex: 1;
+}
+.box h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color:black;
+    font-weight: bold;
+}
+.box p {
+    font-size: 15px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .box img {
+        margin: 0 0 20px;
+        max-width: 100%;
+    }
+}
+.contato{
+    background-color: rgb(50, 148, 102);
+    color: white;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+.entre{
+    margin: 0 auto;
+    font-size: 20px;
+    max-width: 200px;
+    
+}
+.endereco{
+    font-size: 17px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    gap: 20px;
+}
+.tel{
+    font-size: 17px;
+    margin: 0 auto;
+    display: flex;
+    max-width: 300px;
+    gap: 20px;
+    align-items: center;
+    flex-grow: 1;
+}
+.data{
+    font-size: 17px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    gap: 20px;
+}
+.endereco img, .data img,.tel img{
+    width: 30px;
+}
+.rodape{
+    background-color: rgb(50, 148, 102);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 25px;
+}
